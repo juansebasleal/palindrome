@@ -22,7 +22,7 @@ class PalindromeController < ApplicationController
 	{
 	  :palindromes => @howManyPali.to_s,
       :cycles => (@cycles + @cycles_int).to_s,
-      :complexity => "XXX"
+      :complexity => "O(N) * FLOOR([CEILING(LOG(2, N)) / 2])"
     }
 	
   end
